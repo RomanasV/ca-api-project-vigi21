@@ -3,6 +3,8 @@ fetch('https://jsonplaceholder.typicode.com/posts?_limit=15&_start=7')
   .then(posts => {
     let postsList = document.querySelector('#posts-list');
 
+
+    
     posts.map(post => {
       let title = post.title;
       let body = post.body;
